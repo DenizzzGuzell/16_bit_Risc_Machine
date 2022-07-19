@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Jul 19 01:33:37 2022
+# Process ID: 3080
+# Current directory: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11852 C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectFPGA\SingleCycle_16bit_Risc_FPGA_verilog\SingleCycle_16bit_Risc_FPGA.xpr
+# Log file: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/vivado.log
+# Journal file: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/SingleCycle_16bit_Risc_FPGA.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.1/data/ip'.
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/.Xil/Vivado-3080-DESKTOP-RO0P4VT/dcp/Risc_16_bit.xdc]
+Finished Parsing XDC File [C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/.Xil/Vivado-3080-DESKTOP-RO0P4VT/dcp/Risc_16_bit.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 995.750 ; gain = 0.012
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 995.750 ; gain = 0.012
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1125.957 ; gain = 339.148
+ERROR: [Common 17-165] Too many positional options when parsing 'II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/SingleCycle_16bit_Risc_FPGA.runs/impl_1/Risc_16_bit_power_routed.rpx', please type 'open_report -help' for usage info.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 19 01:41:56 2022...

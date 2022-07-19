@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Jul 18 23:43:03 2022
+# Process ID: 3396
+# Current directory: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7428 C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectFPGA\SingleCycle_16bit_Risc_FPGA_verilog\SingleCycle_16bit_Risc_FPGA.xpr
+# Log file: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/vivado.log
+# Journal file: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/SingleCycle_16bit_Risc_FPGA.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog'
+INFO: [Project 1-313] Project file moved from 'C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 813.734 ; gain = 132.492
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Mon Jul 18 23:44:05 2022] Launched impl_1...
+Run output will be captured here: C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/SingleCycle_16bit_Risc_FPGA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/.Xil/Vivado-3396-DESKTOP-RO0P4VT/dcp/Risc_16_bit.xdc]
+Finished Parsing XDC File [C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/.Xil/Vivado-3396-DESKTOP-RO0P4VT/dcp/Risc_16_bit.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1023.898 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1023.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1138.184 ; gain = 315.410
+ERROR: [Common 17-165] Too many positional options when parsing 'II/CorgProjectFPGA/SingleCycle_16bit_Risc_FPGA_verilog/SingleCycle_16bit_Risc_FPGA.runs/impl_1/Risc_16_bit_power_routed.rpx', please type 'open_report -help' for usage info.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[3]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[4]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[5]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[6]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[7]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[8]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[9]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[10]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[11]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[12]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[13]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[14]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[15]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[1]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[2]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[3]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[4]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[5]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[6]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[7]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[8]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[9]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[10]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[11]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[12]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[13]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[14]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'instr_out[15]'; it is not accessible from the fabric routing.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 18 23:45:46 2022...
