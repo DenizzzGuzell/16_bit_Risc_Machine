@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectVerilog/Risc_SingleCycle_16_bit/TopModule.xst" -ofn "C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectVerilog/Risc_SingleCycle_16_bit/TopModule.syr" 
+xst -intstyle ise -ifn "C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectVerilog/Risc_SingleCycle_16_bit/TopModule.xst" -ofn "C:/Users/denzz/Desktop/DERS/CORG/Project II/CorgProjectVerilog/Risc_SingleCycle_16_bit/TopModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "TopModule.ngc" TopModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o TopModule_map.ncd TopModule.ngd TopModule.pcf 

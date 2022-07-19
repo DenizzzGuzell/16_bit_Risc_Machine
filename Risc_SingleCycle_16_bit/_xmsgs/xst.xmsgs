@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="817" delta="new" >"C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v" Line 89: System task <arg fmt="%s" index="1">monitor</arg> ignored for synthesis
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v</arg>&quot; line <arg fmt="%d" index="2">569</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">DU</arg>&gt; of block &lt;<arg fmt="%s" index="4">Datapath_Unit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TopModule</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v</arg>&quot; line <arg fmt="%d" index="2">583</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">control</arg>&gt; of block &lt;<arg fmt="%s" index="4">Control_Unit</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">TopModule</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pc&lt;0:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">pc&lt;15:13&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2999" delta="new" >Signal &apos;<arg fmt="%s" index="1">instruction_memory</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">Instruction_Memory</arg>&apos;, is tied to its initial value.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">mem_access_addr&lt;15:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+</messages>
+

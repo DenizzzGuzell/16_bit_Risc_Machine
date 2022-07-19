@@ -1,0 +1,446 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: TopModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TopModule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TopModule"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : TopModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v" into library work
+Parsing module <Instruction_Memory>.
+Parsing module <GPRs>.
+Parsing module <Data_Memory>.
+Parsing module <ALU>.
+Parsing module <alu_control>.
+Parsing module <Control_Unit>.
+Parsing module <Datapath_Unit>.
+Parsing module <TopModule>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TopModule>.
+
+Elaborating module <Datapath_Unit>.
+
+Elaborating module <Instruction_Memory>.
+
+Elaborating module <GPRs>.
+WARNING:HDLCompiler:817 - "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v" Line 89: System task monitor ignored for synthesis
+
+Elaborating module <alu_control>.
+
+Elaborating module <ALU>.
+
+Elaborating module <Data_Memory>.
+
+Elaborating module <Control_Unit>.
+WARNING:Xst:2972 - "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v" line 569. All outputs of instance <DU> of block <Datapath_Unit> are unconnected in block <TopModule>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v" line 583. All outputs of instance <control> of block <Control_Unit> are unconnected in block <TopModule>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TopModule>.
+    Related source file is "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v".
+    Summary:
+	no macro.
+Unit <TopModule> synthesized.
+
+Synthesizing Unit <Instruction_Memory>.
+    Related source file is "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v".
+WARNING:Xst:647 - Input <pc<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pc<15:13>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'instruction_memory', unconnected in block 'Instruction_Memory', is tied to its initial value.
+    Found 128x16-bit single-port Read Only RAM <Mram_instruction_memory> for signal <instruction_memory>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <Instruction_Memory> synthesized.
+
+Synthesizing Unit <GPRs>.
+    Related source file is "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v".
+    Found 1-bit register for signal <reg_array_0<127>>.
+    Found 1-bit register for signal <reg_array_0<126>>.
+    Found 1-bit register for signal <reg_array_0<125>>.
+    Found 1-bit register for signal <reg_array_0<124>>.
+    Found 1-bit register for signal <reg_array_0<123>>.
+    Found 1-bit register for signal <reg_array_0<122>>.
+    Found 1-bit register for signal <reg_array_0<121>>.
+    Found 1-bit register for signal <reg_array_0<120>>.
+    Found 1-bit register for signal <reg_array_0<119>>.
+    Found 1-bit register for signal <reg_array_0<118>>.
+    Found 1-bit register for signal <reg_array_0<117>>.
+    Found 1-bit register for signal <reg_array_0<116>>.
+    Found 1-bit register for signal <reg_array_0<115>>.
+    Found 1-bit register for signal <reg_array_0<114>>.
+    Found 1-bit register for signal <reg_array_0<113>>.
+    Found 1-bit register for signal <reg_array_0<112>>.
+    Found 1-bit register for signal <reg_array_0<111>>.
+    Found 1-bit register for signal <reg_array_0<110>>.
+    Found 1-bit register for signal <reg_array_0<109>>.
+    Found 1-bit register for signal <reg_array_0<108>>.
+    Found 1-bit register for signal <reg_array_0<107>>.
+    Found 1-bit register for signal <reg_array_0<106>>.
+    Found 1-bit register for signal <reg_array_0<105>>.
+    Found 1-bit register for signal <reg_array_0<104>>.
+    Found 1-bit register for signal <reg_array_0<103>>.
+    Found 1-bit register for signal <reg_array_0<102>>.
+    Found 1-bit register for signal <reg_array_0<101>>.
+    Found 1-bit register for signal <reg_array_0<100>>.
+    Found 1-bit register for signal <reg_array_0<99>>.
+    Found 1-bit register for signal <reg_array_0<98>>.
+    Found 1-bit register for signal <reg_array_0<97>>.
+    Found 1-bit register for signal <reg_array_0<96>>.
+    Found 1-bit register for signal <reg_array_0<95>>.
+    Found 1-bit register for signal <reg_array_0<94>>.
+    Found 1-bit register for signal <reg_array_0<93>>.
+    Found 1-bit register for signal <reg_array_0<92>>.
+    Found 1-bit register for signal <reg_array_0<91>>.
+    Found 1-bit register for signal <reg_array_0<90>>.
+    Found 1-bit register for signal <reg_array_0<89>>.
+    Found 1-bit register for signal <reg_array_0<88>>.
+    Found 1-bit register for signal <reg_array_0<87>>.
+    Found 1-bit register for signal <reg_array_0<86>>.
+    Found 1-bit register for signal <reg_array_0<85>>.
+    Found 1-bit register for signal <reg_array_0<84>>.
+    Found 1-bit register for signal <reg_array_0<83>>.
+    Found 1-bit register for signal <reg_array_0<82>>.
+    Found 1-bit register for signal <reg_array_0<81>>.
+    Found 1-bit register for signal <reg_array_0<80>>.
+    Found 1-bit register for signal <reg_array_0<79>>.
+    Found 1-bit register for signal <reg_array_0<78>>.
+    Found 1-bit register for signal <reg_array_0<77>>.
+    Found 1-bit register for signal <reg_array_0<76>>.
+    Found 1-bit register for signal <reg_array_0<75>>.
+    Found 1-bit register for signal <reg_array_0<74>>.
+    Found 1-bit register for signal <reg_array_0<73>>.
+    Found 1-bit register for signal <reg_array_0<72>>.
+    Found 1-bit register for signal <reg_array_0<71>>.
+    Found 1-bit register for signal <reg_array_0<70>>.
+    Found 1-bit register for signal <reg_array_0<69>>.
+    Found 1-bit register for signal <reg_array_0<68>>.
+    Found 1-bit register for signal <reg_array_0<67>>.
+    Found 1-bit register for signal <reg_array_0<66>>.
+    Found 1-bit register for signal <reg_array_0<65>>.
+    Found 1-bit register for signal <reg_array_0<64>>.
+    Found 1-bit register for signal <reg_array_0<63>>.
+    Found 1-bit register for signal <reg_array_0<62>>.
+    Found 1-bit register for signal <reg_array_0<61>>.
+    Found 1-bit register for signal <reg_array_0<60>>.
+    Found 1-bit register for signal <reg_array_0<59>>.
+    Found 1-bit register for signal <reg_array_0<58>>.
+    Found 1-bit register for signal <reg_array_0<57>>.
+    Found 1-bit register for signal <reg_array_0<56>>.
+    Found 1-bit register for signal <reg_array_0<55>>.
+    Found 1-bit register for signal <reg_array_0<54>>.
+    Found 1-bit register for signal <reg_array_0<53>>.
+    Found 1-bit register for signal <reg_array_0<52>>.
+    Found 1-bit register for signal <reg_array_0<51>>.
+    Found 1-bit register for signal <reg_array_0<50>>.
+    Found 1-bit register for signal <reg_array_0<49>>.
+    Found 1-bit register for signal <reg_array_0<48>>.
+    Found 1-bit register for signal <reg_array_0<47>>.
+    Found 1-bit register for signal <reg_array_0<46>>.
+    Found 1-bit register for signal <reg_array_0<45>>.
+    Found 1-bit register for signal <reg_array_0<44>>.
+    Found 1-bit register for signal <reg_array_0<43>>.
+    Found 1-bit register for signal <reg_array_0<42>>.
+    Found 1-bit register for signal <reg_array_0<41>>.
+    Found 1-bit register for signal <reg_array_0<40>>.
+    Found 1-bit register for signal <reg_array_0<39>>.
+    Found 1-bit register for signal <reg_array_0<38>>.
+    Found 1-bit register for signal <reg_array_0<37>>.
+    Found 1-bit register for signal <reg_array_0<36>>.
+    Found 1-bit register for signal <reg_array_0<35>>.
+    Found 1-bit register for signal <reg_array_0<34>>.
+    Found 1-bit register for signal <reg_array_0<33>>.
+    Found 1-bit register for signal <reg_array_0<32>>.
+    Found 1-bit register for signal <reg_array_0<31>>.
+    Found 1-bit register for signal <reg_array_0<30>>.
+    Found 1-bit register for signal <reg_array_0<29>>.
+    Found 1-bit register for signal <reg_array_0<28>>.
+    Found 1-bit register for signal <reg_array_0<27>>.
+    Found 1-bit register for signal <reg_array_0<26>>.
+    Found 1-bit register for signal <reg_array_0<25>>.
+    Found 1-bit register for signal <reg_array_0<24>>.
+    Found 1-bit register for signal <reg_array_0<23>>.
+    Found 1-bit register for signal <reg_array_0<22>>.
+    Found 1-bit register for signal <reg_array_0<21>>.
+    Found 1-bit register for signal <reg_array_0<20>>.
+    Found 1-bit register for signal <reg_array_0<19>>.
+    Found 1-bit register for signal <reg_array_0<18>>.
+    Found 1-bit register for signal <reg_array_0<17>>.
+    Found 1-bit register for signal <reg_array_0<16>>.
+    Found 1-bit register for signal <reg_array_0<15>>.
+    Found 1-bit register for signal <reg_array_0<14>>.
+    Found 1-bit register for signal <reg_array_0<13>>.
+    Found 1-bit register for signal <reg_array_0<12>>.
+    Found 1-bit register for signal <reg_array_0<11>>.
+    Found 1-bit register for signal <reg_array_0<10>>.
+    Found 1-bit register for signal <reg_array_0<9>>.
+    Found 1-bit register for signal <reg_array_0<8>>.
+    Found 1-bit register for signal <reg_array_0<7>>.
+    Found 1-bit register for signal <reg_array_0<6>>.
+    Found 1-bit register for signal <reg_array_0<5>>.
+    Found 1-bit register for signal <reg_array_0<4>>.
+    Found 1-bit register for signal <reg_array_0<3>>.
+    Found 1-bit register for signal <reg_array_0<2>>.
+    Found 1-bit register for signal <reg_array_0<1>>.
+    Found 1-bit register for signal <reg_array_0<0>>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+Unit <GPRs> synthesized.
+
+Synthesizing Unit <alu_control>.
+    Related source file is "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v".
+    Summary:
+	no macro.
+Unit <alu_control> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v".
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <Data_Memory>.
+    Related source file is "C:\Users\denzz\Desktop\DERS\CORG\Project II\CorgProjectVerilog\Risc_SingleCycle_16_bit\TopModule.v".
+WARNING:Xst:647 - Input <mem_access_addr<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 128x16-bit single-port RAM <Mram_data_memory> for signal <data_memory>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <Data_Memory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TopModule> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TopModule, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TopModule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           1
+ Number of bonded IOBs:                   0  out of    210     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 57.00 secs
+Total CPU time to Xst completion: 56.43 secs
+ 
+--> 
+
+Total memory usage is 4650500 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
